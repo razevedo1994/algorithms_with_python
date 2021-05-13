@@ -19,6 +19,10 @@ def _set_sqlite_pragma(dbapi_connection, connection_record):
         cursor.close()
 
 
+# Create instance of database
+db = SQLAlchemy(app)
+now = datetime.now()
+
 # Models
 class User(db.Model):
     __tablename__ = "user"
