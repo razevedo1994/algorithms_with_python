@@ -37,7 +37,7 @@ class User(db.Model):
 class BlogPost(db.Model):
     __tablename__ = "blog_post"
     id = db.Column(db.Integer, primary_key=True)
-    title = db.column(db.String(200))
+    title = db.Column(db.String(200))
     body = db.Column(db.String(200))
     date = db.Column(db.Date)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
