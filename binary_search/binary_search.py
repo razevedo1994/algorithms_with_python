@@ -20,4 +20,6 @@ def binary_search(list, item):
 
 if __name__ == "__main__":
     x = binary_search([1, 3, 5, 7, 9], 3)
+    y = binary_search([1, 3, 5, 7, 9], -1)
     print(x)
+    print(y)
